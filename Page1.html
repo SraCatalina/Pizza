@@ -22,16 +22,20 @@
             background-color: #E5E5E5;
         }
 
+        .mainlogo {
+            position: absolute;
+        }
+
         .main__container-delivery {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 12px, 1fr;
+            grid-template-rows: 12px 1fr;
             text-align: center;
             gap: 40px;
         }
 
         .delivery1 {
-            grid-row: 1 / 2;
+            grid-row: 1 / 3;
             grid-column: 1 / 5;
         }
 
@@ -172,20 +176,117 @@
         .container-2__image {
             max-width: 100%;
         }
+
+        .form-control,
+        .custom-select {
+            background: #FFFFFF;
+            border: 1px solid #CF3031;
+            border-radius: 33px;
+            text-indent: 15px;
+            height: 5rem;
+        }
+
+        .container-4__footer {
+            background-color: #333333;
+            height: 58px;
+        }
+
+        .aside__image1 {
+            position: absolute;
+            padding-left: 7rem;
+            padding-top: 77rem;
+        }
+
+        .aside__image2 {
+            position: absolute;
+            padding-left: 3rem;
+            padding-top: 4rem;
+        }
+
+        .aside__image3 {
+            position: absolute;
+            padding-left: 45rem;
+            padding-top: 17rem;
+        }
+
+        .aside__image4 {
+            position: absolute;
+            padding-left: 8rem;
+            padding-top: 24rem;
+        }
+
+        .aside__image5 {
+            position: absolute;
+            padding-left: 8rem;
+            padding-top: 47rem;
+        }
+
+        .aside__image6 {
+            position: absolute;
+            padding-left: 52rem;
+            padding-top: 55rem;
+        }
+
+        .aside__image7 {
+            position: absolute;
+            padding-left: 10rem;
+            padding-top: 53rem;
+        }
+
+        .aside__image8 {
+            position: absolute;
+            padding-left: 50rem;
+            padding-top: 100rem;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <header>Картинка-заголовок
-        <h1>SALVATION PIZZA</h1>
-        <p>Salvation Pizza</p>
-        <a class="btn btn-danger" href="#" role="button">ORDER ONLINE<p class="p">Delivery or Pickup</p></a>
+    <header class="header">
+        <div class="mainlogo">
+            <img src="./assets1/logo.png" alt="main logo">
+        </div>
     </header>
 
-    <main class="main">
+    <aside class="aside">
 
+        <div class="aside__image1">
+            <img src="./assets1/aside/Leaf1.png" alt="leaf" width="90">
+        </div>
+
+        <div class="aside__image2">
+            <img src="./assets1/aside/Tomato.png" alt="tomato" width="120">
+        </div>
+
+        <div class="aside__image3">
+            <img src="./assets1/aside/fish1.png" alt="fish">
+        </div>
+
+        <div class="aside__image4">
+            <img src="./assets1/aside/Plant.png" alt="plant">
+        </div>
+
+        <div class="aside__image5">
+            <img src="./assets1/aside/mush1.png" alt="mushroom">
+        </div>
+
+        <div class="aside__image6">
+            <img src="./assets1/aside/plant1.png" alt="plant">
+        </div>
+
+        <div class="aside__image7">
+            <img src="./assets1/aside/chili1.png" alt="pepper">
+        </div>
+
+        <div class="aside__image8">
+            <img src="./assets1/aside/chili2.png" alt="peper">
+        </div>
+
+    </aside>
+
+    <main class="main">
         <div class="main__container-delivery">
             <div class="delivery delivery1">
                 <h2>
@@ -206,7 +307,6 @@
                 <img src="./assets1/main-delivery/Rectangle15.png" alt="company4">
             </div>
         </div>
-
         <div class="main__container-about">
             <div class="about about1">
                 <h2>
@@ -246,28 +346,26 @@
             </div>
 
         </div>
-
         <div class="main__social">
             <a href="#" class="badge badge-pill badge-light">
-                <img class="icon" src="./assets1/main-social/other.png" width="30">
+                <img class="icon" src="./assets1/main-social/other.png" width="30" alt="social network logo">
             </a>
 
             <a href="#" class="badge badge-pill badge-light">
-                <img class="icon" src="./assets1/main-social/twitter.png" width="43">
+                <img class="icon" src="./assets1/main-social/twitter.png" width="43" alt="twitter logo">
             </a>
 
             <a href="#" class="badge badge-pill badge-light">
-                <img class="icon" src="./assets1/main-social/facebook.png" width="20">
+                <img class="icon" src="./assets1/main-social/facebook.png" width="20" alt="facebook logo">
             </a>
 
             <a href="#" class="badge badge-pill badge-light">
-                <img class="icon" src="./assets1/main-social/insta.png" width="43">
+                <img class="icon" src="./assets1/main-social/insta.png" width="43" alt="instagram logo">
             </a>
         </div>
     </main>
 
     <footer class="footer">
-
         <div class="container-1">
             <div class="row">
                 <div class="col col-12">
@@ -334,32 +432,61 @@
 
             </div>
         </div>
-
         <div class="container-2">
             <div class="container-2__location">
                 <img class="container-2__image" src="./assets1/footer/location.png" alt="location">
             </div>
         </div>
-
         <div class="container-3">
             <div class="row">
-                <div class="">
-                    <h2>Contact Us</h2>
+                <div class="col col-12">
+                    <h2 class="col__header"><span class="red-name">Contact</span>
+                        <span class="black-name">Us</span>
+                    </h2>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-
+                <div class="col col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                            name="firstname" required>
+                    </div>
+                </div>
+                <div class="col col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                            name="lastname" required>
+                    </div>
+                </div>
+                <div class="col col-6">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" name="email"
+                            required>
+                    </div>
+                </div>
+                <div class="col col-6">
+                    <div class="input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Subject</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col col-12">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Message" aria-label="Message"
+                            name="message" required>
+                    </div>
+                </div>
             </div>
 
 
 
 
         </div>
-
-
+        <div class="container-4">
+            <div class="container-4__footer"></div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
